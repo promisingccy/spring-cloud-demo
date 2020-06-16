@@ -1,0 +1,24 @@
+#### 启动eureka单点应用
+# 配置 application.yml  注释 bootstrap.yml
+# 启动 EurekaApplication 类 main 方法
+# 访问 http://127.0.0.1:8000/
+
+
+#### 启动eureka集群应用
+# 配置 bootstrap.yml  注释 application.yml
+mvn clean package -Dmaven.test.skip=true -U
+cd eureka-demo
+cd target
+java -jar eureka-demo-1.0-SNAPSHOT.jar --spring.profiles.active=server1
+java -jar eureka-demo-1.0-SNAPSHOT.jar --spring.profiles.active=server2
+java -jar eureka-demo-1.0-SNAPSHOT.jar --spring.profiles.active=server3
+
+# 分别启动三个节点后 依次访问查看节点信息
+http://127.0.0.1:8000/
+http://127.0.0.1:8001/
+http://127.0.0.1:8002/
+
+
+
+
+

@@ -7,8 +7,9 @@
     <groupId>com.ccy.springCloudDemo</groupId>
     <artifactId>spring-cloud-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <!-- 父模块包含的子模块列表 -->
     <modules>
-        <module>demo-eureka</module>
         <module>eureka-demo</module>
     </modules>
 
