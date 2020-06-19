@@ -20,5 +20,9 @@ http://127.0.0.1:8002/
 
 
 
+########### 测试接口用例编写
+test下创建 resources 目录，右键标记 mark directory as-> test resources root
+
+
 
 
